@@ -15,3 +15,27 @@ struct UserModel {
     let userEmail: String
     let userAdderss: String
 }
+
+extension UserModel: ProfileData {
+    var avatarName: String {
+        userAvatarName
+    }
+    
+    var firstName: String {
+        userFirstName
+    }
+    
+    var lastName: String {
+        userLastName
+    }
+    
+    var eMail: String {
+        userEmail
+    }
+    
+    var address: String {
+        userAdderss
+    }
+    
+    
+}
